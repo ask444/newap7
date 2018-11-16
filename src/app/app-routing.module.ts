@@ -3,9 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'projects',
-    loadChildren: './projects.module#ProjectsModule'
-  }
+    path: '',
+    loadChildren: './main/main.module#MainModule'
+  },
+  { path: '**', redirectTo: '/' }
+
 ];
 
 @NgModule({
